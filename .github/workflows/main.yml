@@ -1,5 +1,8 @@
 name: CI
-on: [push]
+on:
+  push:
+    branches:
+      - dev
 
 jobs:
   build:
@@ -20,4 +23,6 @@ jobs:
         uses: borales/actions-yarn@v4
         with:
           cmd: deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
      
