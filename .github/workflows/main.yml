@@ -19,6 +19,7 @@ jobs:
         uses: borales/actions-yarn@v4
         with:
           cmd: install
+      - run: git config user.name "deploy" && git config user.email "deploy@noove.org"
       - name: Deploy
         uses: borales/actions-yarn@v4
         with:
