@@ -23,7 +23,7 @@ jobs:
       - name: Deploy
         uses: borales/actions-yarn@v4
         with:
-          cmd: deploy
+          cmd: deploy:ci
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
      
