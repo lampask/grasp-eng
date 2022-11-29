@@ -9,8 +9,7 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "deploy": "gh-pages -d web-build",
-    "predeploy": "expo export:web",
-    "deploy:ci": "expo export:web && gh-pages -d web-build -r https://$GITHUB_TOKEN@github.com/lampask/grasp-eng.git"
+    "predeploy": "expo export:web"
   },
   "dependencies": {
     "@expo/webpack-config": "^0.17.2",
