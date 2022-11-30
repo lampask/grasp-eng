@@ -28,7 +28,7 @@ export default function App() {
       {isLoading ? <LoadingScreen /> : (
         <>
           <Main data={data} textState={textState} />
-          {wasIntroduced ? <></> : <Intro introduced={setIntro} />}
+          {wasIntroduced ? <></> : <Intro data={data?.intro!} introduced={setIntro} />}
         </>
       )}
     </RecoilRoot>

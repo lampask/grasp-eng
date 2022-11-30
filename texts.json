@@ -52,7 +52,7 @@
     ],
     "intro": {
         "title": "Welcome dear LA student",
-        "content": "##What is this? \n ##How it works?",
+        "content": "## What is this? \n ## How it works?",
         "buttonText": "PROCEED"
     },
     "results": [
