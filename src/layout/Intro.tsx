@@ -6,7 +6,6 @@ export const Intro = ({ introduced }: { introduced: React.Dispatch<React.SetStat
         <BlurView style={styles.container}>
             <View style={styles.box}>
                 <Text selectable={false} style={styles.text}>Welcome dear LA student</Text>
-                <Text selectable={false} style={styles.text}>Welcome dear LA student</Text>
                 <Pressable onPress={() => { introduced(true) }}>
                     <Text>PROCEED</Text>
                 </Pressable>

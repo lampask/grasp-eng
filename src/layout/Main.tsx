@@ -26,7 +26,7 @@ export const Main = ({ data, textState }: { data: Data | undefined, textState: [
     <> 
         <Title title={data?.texts[text].name!} name={data?.texts[text].author!} />
         <View style={styles.container}>
-        <ControlsSidebar />
+        <ControlsSidebar res={data?.results!} />
         <Paper text={data?.texts[text].text!} devices={data?.texts[text].devices!}/>
         <ToolsSidebar tools={data?.guides!} id={text} size={data?.texts.length!} info={data?.texts[text]!} textSetter={setText}/>
         </View>

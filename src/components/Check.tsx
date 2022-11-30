@@ -1,9 +1,17 @@
 import { StyleSheet, Text, View } from 'react-native';
 
-export const Check = ({ results }: { results: number}) => {
+export const Check = ({ results, res }: { results: number, res: Result[] }) => {
+    
+    let resText = "";
+    res.forEach((result) => {
+        if (result.breakpoint <= results ) {
+            resText = result.message;
+        }
+    })
+
     return (
         <View style={styles.container}>
-            <Text style={styles.text}>Something something heheheha</Text>
+            <Text style={styles.text}>{resText}</Text>
             <View style={styles.sphere}>
                 <Text style={styles.result}>{results}%</Text>
             </View>

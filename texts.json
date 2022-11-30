@@ -7,13 +7,16 @@
             "devices": [
                 {
                     "name": 0,
-                    "range": [738, 874]
+                    "range": [738, 874],
+                    "explanation": ""
                 }, {
                     "name": 1,
-                    "range": [1107, 1115]
+                    "range": [1107, 1115],
+                    "explanation": ""
                 }, {
                     "name": 0,
-                    "range": [18, 29]
+                    "range": [18, 29],
+                    "explanation": ""
                 }
             ]
         },
@@ -24,18 +27,20 @@
             "devices": [
                 {
                     "name": 1,
-                    "range": [738, 874]
+                    "range": [738, 874],
+                    "explanation": ""
                 }, {
                     "name": 0,
-                    "range": [1107, 1115]
+                    "range": [1107, 1115],
+                    "explanation": ""
                 }, {
                     "name": 0,
-                    "range": [0, 15]
+                    "range": [0, 15],
+                    "explanation": ""
                 }
             ]
         }
     ],
-
     "guides": [
         {
             "name": "Alliteration",
@@ -45,10 +50,40 @@
             "description": "A reference to a generally familiar person, place or thing, whether real or legendary\n-drawn from history, geography, the Bible, mythology, and literature\n-creates familiarity for the audience; the audience connects to something larger than the present\nExample: Chocolate cake is my Achilles heel."
         }
     ],
-
     "intro": {
         "title": "Welcome dear LA student",
         "content": "##What is this? \n ##How it works?",
-        "button": "PROCEED"
+        "buttonText": "PROCEED"
+    },
+    "results": [
+        {
+            "breakpoint": 0,
+            "message": "You are a beginner"
+        },
+        {
+            "breakpoint": 25,
+            "message": "Bruh Bruh Bruh"
+        },
+        {
+            "breakpoint": 50,
+            "message": "Bruh bruh"
+        },
+        {
+            "breakpoint": 75,
+            "message": "Bruh"
+        },
+        {
+            "breakpoint": 100,
+            "message": "Amazing"
+        }
+    ],
+    "settings": {
+        "rhetoricHeadline": "Rhetorical tools",
+        "checkAnswersButton": "Check answers",
+        "nextButton": "Next text",
+        "correctColor": "#00ff00",
+        "incorrectColor": "#ff0000",
+        "primaryColor": "#f2f2f6",
+        "secondaryColor": "#d5d5d5"
     }
 }
