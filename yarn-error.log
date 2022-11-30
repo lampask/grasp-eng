@@ -1,25 +1,30 @@
 Arguments: 
-  /home/adam/.nvm/versions/node/v16.18.1/bin/node /home/adam/.yarn/bin/yarn.js web
+  /home/adam/.nvm/versions/node/v18.12.1/bin/node /home/adam/.yarn/bin/yarn.js add @types/expo-radio-button
 
 PATH: 
-  /home/adam/.nvm/versions/node/v16.18.1/bin:/home/adam/.nvm/versions/node/v17.9.1/bin:/home/adam/.nvm/versions/node/v18.12.1/bin:/home/adam/.yarn/bin:/home/adam/.config/yarn/global/node_modules/.bin:/home/adam/perl5/bin:/home/adam/bin:/usr/local/bin:/home/adam/.nvm/versions/node/v18.12.1/bin:/home/adam/.yarn/bin:/home/adam/.config/yarn/global/node_modules/.bin:/home/adam/perl5/bin:/home/adam/bin:/usr/local/bin:/opt/google-cloud-sdk/bin:/home/adam/.nvm/versions/node/v18.12.1/bin:/home/adam/.yarn/bin:/home/adam/.config/yarn/global/node_modules/.bin:/home/adam/perl5/bin:/home/adam/bin:/usr/local/bin:/opt/google-cloud-sdk/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/opt/android-sdk/emulator:/opt/android-sdk/platform-tools:/opt/android-sdk/tools:/opt/android-sdk/tools/bin:/home/adam/.dotnet/tools:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin:/home/adam/.cargo/bin:/home/adam/.local/bin:/opt/android-sdk/emulator:/opt/android-sdk/platform-tools:/opt/android-sdk/tools:/opt/android-sdk/tools/bin:/usr/lib/jvm/default/bin:/home/adam/.cargo/bin:/home/adam/.local/bin:/home/adam/.cargo/bin:/home/adam/.local/bin
+  /home/adam/.nvm/versions/node/v18.12.1/bin:/home/adam/.yarn/bin:/home/adam/.config/yarn/global/node_modules/.bin:/home/adam/perl5/bin:/home/adam/bin:/usr/local/bin:/home/adam/.nvm/versions/node/v18.12.1/bin:/home/adam/.yarn/bin:/home/adam/.config/yarn/global/node_modules/.bin:/home/adam/perl5/bin:/home/adam/bin:/usr/local/bin:/opt/google-cloud-sdk/bin:/home/adam/.nvm/versions/node/v18.12.1/bin:/home/adam/.yarn/bin:/home/adam/.config/yarn/global/node_modules/.bin:/home/adam/perl5/bin:/home/adam/bin:/usr/local/bin:/opt/google-cloud-sdk/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/opt/android-sdk/emulator:/opt/android-sdk/platform-tools:/opt/android-sdk/tools:/opt/android-sdk/tools/bin:/home/adam/.dotnet/tools:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin:/home/adam/.cargo/bin:/home/adam/.local/bin:/opt/android-sdk/emulator:/opt/android-sdk/platform-tools:/opt/android-sdk/tools:/opt/android-sdk/tools/bin:/usr/lib/jvm/default/bin:/home/adam/.cargo/bin:/home/adam/.local/bin:/home/adam/.cargo/bin:/home/adam/.local/bin
 
 Yarn version: 
   1.22.17
 
 Node version: 
-  16.18.1
+  18.12.1
 
 Platform: 
   linux x64
 
 Trace: 
-  SyntaxError: /home/adam/code/node/apengrasp/grasp/package.json: Unexpected token } in JSON at position 358
-      at JSON.parse (<anonymous>)
-      at /home/adam/.yarn/lib/cli.js:1625:59
-      at Generator.next (<anonymous>)
-      at step (/home/adam/.yarn/lib/cli.js:310:30)
-      at /home/adam/.yarn/lib/cli.js:321:13
+  Error: https://registry.yarnpkg.com/@types%2fexpo-radio-button: Not found
+      at params.callback [as _callback] (/home/adam/.yarn/lib/cli.js:67029:18)
+      at self.callback (/home/adam/.yarn/lib/cli.js:140883:22)
+      at Request.emit (node:events:513:28)
+      at Request.<anonymous> (/home/adam/.yarn/lib/cli.js:141855:10)
+      at Request.emit (node:events:513:28)
+      at IncomingMessage.<anonymous> (/home/adam/.yarn/lib/cli.js:141777:12)
+      at Object.onceWrapper (node:events:627:28)
+      at IncomingMessage.emit (node:events:525:35)
+      at endReadableNT (node:internal/streams/readable:1359:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
 
 npm manifest: 
   {
@@ -33,11 +38,13 @@ npm manifest:
       "ios": "expo start --ios",
       "web": "expo start --web",
       "deploy": "gh-pages -d web-build",
-      "predeploy": "expo export:web",
+      "predeploy": "expo export:web"
     },
     "dependencies": {
+      "@expo/vector-icons": "^13.0.0",
       "@expo/webpack-config": "^0.17.2",
       "expo": "~47.0.8",
+      "expo-radio-button": "^1.0.8",
       "expo-status-bar": "~1.4.2",
       "react": "18.1.0",
       "react-dom": "18.1.0",
@@ -4512,6 +4519,11 @@ Lockfile:
       chalk "^4.0.0"
       commander "2.20.0"
       update-check "1.5.3"
+  
+  expo-radio-button@^1.0.8:
+    version "1.0.8"
+    resolved "https://registry.yarnpkg.com/expo-radio-button/-/expo-radio-button-1.0.8.tgz#5f5c411ae0a2da633ae4b56d87a59dfa23a47bae"
+    integrity sha512-sE+aCtq5/lL1Y24oVYMyGug0IPt0R3dXS6rSK2S+A+EFm6HYBj0ZKGA35ywSekS+/8lE9UwKS+ORwQlWsfXoUQ==
   
   expo-status-bar@~1.4.2:
     version "1.4.2"

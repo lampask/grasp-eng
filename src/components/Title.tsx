@@ -1,9 +1,10 @@
 import { StyleSheet, Text, View } from 'react-native';
 
-export const Title = ({ title }: { title: string }) => {
+export const Title = ({ title, name }: { title: string, name: string }) => {
     return (
         <View style={styles.box} >
             <Text style={styles.title}>{title}</Text>
+            <Text style={styles.name}>by {name}</Text>
         </View>
     );
 };
@@ -19,8 +20,13 @@ const styles = StyleSheet.create({
     box: {
         width: '50hw',
         display: 'flex',
-        flexDirection: 'row',
+        flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
+    },
+    name: {
+        fontSize: 20,
+        fontStyle: 'italic',
+        color: 'gray',
     }
 });

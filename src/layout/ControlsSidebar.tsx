@@ -1,9 +1,13 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import { useRecoilState } from 'recoil';
+import { Check } from '../components/Check';
+import { resultsState } from '../lib/state';
 
 export const ControlsSidebar = ({ }: {}) => {
+    const [results, setResults] = useRecoilState(resultsState);
     return (
         <View style={styles.container}>
-            <Text>Controls Sidebar</Text>
+            {results !== -1 ? <Check results={results}/> : <></>}
         </View>
     );
 };

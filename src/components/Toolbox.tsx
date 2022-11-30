@@ -1,10 +1,17 @@
 import { StyleSheet, Text, View } from 'react-native';
+import { Tool } from './Tool';
 
-export const Toolbox = ({ }: {}) => {
+export const Toolbox = ({ tools }: { tools: Array<{
+    name: string;
+    description: string;
+  }>}) => {
+
     return (
         <View style={styles.container}>
             <Text style={styles.text}>Rethorical tools</Text>
-            
+            {tools.map((tool, index) => (
+                <Tool key={index} id={index} name={tool.name} description={tool.description} size={tools.length} />
+            ))}
         </View>
     );
 };
@@ -17,6 +24,7 @@ const styles = StyleSheet.create({
         borderRadius: 33,
         alignItems: 'center',
         justifyContent: 'flex-start',
+        paddingBottom: 20,
     },
     text: {
         fontWeight: 'bold',

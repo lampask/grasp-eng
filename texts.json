@@ -44,5 +44,11 @@
             "name": "Allusion",
             "description": "A reference to a generally familiar person, place or thing, whether real or legendary\n-drawn from history, geography, the Bible, mythology, and literature\n-creates familiarity for the audience; the audience connects to something larger than the present\nExample: Chocolate cake is my Achilles heel."
         }
-    ]
+    ],
+
+    "intro": {
+        "title": "Welcome dear LA student",
+        "content": "##What is this? \n ##How it works?",
+        "button": "PROCEED"
+    }
 }
