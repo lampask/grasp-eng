@@ -56,7 +56,7 @@
             "devices": [
                 {
                     "name": 9,
-                    "range": [456, 517],
+                    "range": [455, 517],
                     "explanation": ""
                 },
                 {
@@ -65,23 +65,23 @@
                     "explanation": ""
                 }, 
                 {
-                    "name": 2,
-                    "range": [1133, 1141],
+                    "name": 11,
+                    "range": [1268, 1330],
                     "explanation": ""
                 },
                 {
-                    "name": 3,
-                    "range": [1185, 1223],
+                    "name": 12,
+                    "range": [1732, 1833],
+                    "explanation": ""
+                },
+                {
+                    "name": 14,
+                    "range": [2142, 2190],
                     "explanation": ""
                 },
                 {
                     "name": 0,
-                    "range": [10000, 10000],
-                    "explanation": ""
-                },
-                {
-                    "name": 0,
-                    "range": [10000, 10000],
+                    "range": [2513, 2560],
                     "explanation": ""
                 },
                 {
