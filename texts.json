@@ -240,6 +240,7 @@
         "correctColor": "#00ff00",
         "incorrectColor": "#ff0000",
         "primaryColor": "#f2f2f6",
-        "secondaryColor": "#d5d5d5"
+        "secondaryColor": "#d5d5d5",
+        "explanation": "Explanation"
     }
 }
