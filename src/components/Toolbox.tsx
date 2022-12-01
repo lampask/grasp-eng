@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native';
 import { useMediaQuery } from 'react-responsive';
 import { useRecoilState } from 'recoil';
-import { settingState } from '../lib/state';
+import { pairingState, settingState } from '../lib/state';
 import { Tool } from './Tool';
 
 export const Toolbox = ({ tools }: { tools: Array<{
@@ -12,9 +12,12 @@ export const Toolbox = ({ tools }: { tools: Array<{
         maxDeviceWidth: 1224,
       })
     const [settings, setSettings] = useRecoilState(settingState);
+    const [pairing, setPairing] = useRecoilState(pairingState);
+    let pairCount = 0;
+    pairing.forEach((pair) => { if (pair.deviceId !== -1) pairCount++ });
     return (
         <View style={[styles.container, isTabletOrMobileDevice ? styles.column : styles.row]}>
-            <Text style={styles.text}>{settings.rhetoricHeadline}</Text>
+            <Text style={styles.text}>{settings.rhetoricHeadline} ({pairCount}/6)</Text>
             {tools.map((tool, index) => (
                 <Tool key={index} id={index} name={tool.name} description={tool.description} size={tools.length} />
             ))}

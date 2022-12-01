@@ -10,7 +10,7 @@ export const Intro = ({ data, introduced }: { data: Intro, introduced: React.Dis
                 <Markdown>
                     {data !== undefined ? data.content : ""}
                 </Markdown>
-                <Pressable onPress={() => { introduced(true) }}>
+                <Pressable style={styles.button} onPress={() => { introduced(true) }}>
                     <Text>{data.buttonText}</Text>
                 </Pressable>
             </View>
@@ -25,6 +25,8 @@ const styles = StyleSheet.create({
         bottom: 0,
         right: 0,
         height: '100%',
+        width: '100%',
+        overflow: 'hidden',
     }, 
     text: {
         fontWeight: 'bold',
@@ -43,5 +45,11 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'flex-start',
         marginVertical: 10,
+    },
+    button: {
+        backgroundColor: '#5bc8af',
+        borderRadius: 33,
+        padding: 10,
+        margin: 10,
     }
 });
