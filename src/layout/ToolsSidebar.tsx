@@ -26,6 +26,7 @@ export const ToolsSidebar = ({ tools, size, id, info, textSetter }: { tools: Arr
 
 const styles = StyleSheet.create({
     container: {
+        minWidth: 230,
         flexWrap: 'wrap',
         display: 'flex',
         backgroundColor: '#fff',

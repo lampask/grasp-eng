@@ -14,6 +14,7 @@ export const ControlsSidebar = ({res}: { res: Result[] }) => {
 
 const styles = StyleSheet.create({
     container: {
+        minWidth: 230,
         display: 'flex',
         backgroundColor: '#fff',
         alignItems: 'center',
