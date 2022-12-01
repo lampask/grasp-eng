@@ -8,48 +8,38 @@
                 {
                     "name": 5,
                     "range": [115, 149],
-                    "explanation": ""
+                    "explanation": "This is an example of euphemism, as Napoleon being advised by someone about bitter weeds is a more pleasant way of suggesting he might lose."
+                },
+                {
+                    "name": 12,
+                    "range": [464, 491],
+                    "explanation": "They do not actually want to ride out of a storm, but rather be successful in the war"
                 },
                 {
                     "name": 9,
                     "range": [738, 874],
-                    "explanation": ""
+                    "explanation": "This is a periodic sentence, as the main clause is expressed towards the end of the sentence"
                 }, 
                 {
                     "name": 2,
                     "range": [1133, 1141],
-                    "explanation": ""
+                    "explanation": "This is anaphora, as the phrase \"We shall\" is repeatedly used in the beginning of clauses"
                 },
                 {
                     "name": 3,
                     "range": [1185, 1223],
-                    "explanation": ""
+                    "explanation": "We can see assonance in the words \"seas\" and \"oceans\" where the vowel \"ea\" is repeated"
                 },
                 {
-                    "name": 0,
-                    "range": [10000, 10000],
-                    "explanation": ""
-                },
-                {
-                    "name": 0,
-                    "range": [10000, 10000],
-                    "explanation": ""
-                },
-                {
-                    "name": 0,
-                    "range": [10000, 10000],
-                    "explanation": ""
-                },
-                {
-                    "name": 0,
-                    "range": [10000, 10000],
-                    "explanation": ""
+                    "name": 13,
+                    "range": [1641, 1703],
+                    "explanation": "This is imagery, as it makes the reader imagine the Empire thanks to the description"
                 }
                     
                     
             ]
         },
-            {
+        {
             "name": "Perseverence",
             "author": "Albricht",
             "text": "As individuals, each of us must choose whether to live our lives narrowly, selfishly and complacently , or to act with courage and faith. \nAs a nation, America must choose whether to turn inward and betray the lessons of history, or to seize the opportunity before us to shape history. Today, under the leadership of President Clinton, America is making the right choice. \nThe Berlin Wall is now a memory . We could  be satisfied with that. Instead, we are enlarging and adapting NATO and striving to create a future for Europe in which every democracy—including Russia — is our partner and every partner is a builder of peace. \nLargely because of U.S. leadership, nuclear weapons no longer target our homes. We could relax. Instead, we are working to reduce nuclear arsenals further, eliminate chemical weapons, end the child-maiming scourge   of land mines and ratify a treaty that would ban nuclear explosions forever. \nThe fighting in Bosnia has stopped. We could turn our backs now and risk renewed war. Instead, we are renewing our commitment, and insisting that the parties meet theirs, to implement the Dayton Accords. And we are backing the War Crimes Tribunal, because we believe that those responsible for ethnic cleansing should be held accountable and those who consider rape just another tactic of war should answer for their crimes. \nWe have built a growing world economy in which those with modern skills and available capital have done very well. We could stop there. Instead, we are pursuing a broader prosperity, in which those entrapped by poverty and discrimination are empowered to share, and in which every democracy on every continent will be included. \nIn our lifetimes, we have seen enormous advances in the status of women. We could now lower our voices and — as some suggest —sit sedately down. Instead, women everywhere —whether bumping against a glass ceiling or rising from a dirt floor —are standing up, spreading the word that we are ready to claim our rightful place as full citizens and full participants in every society on Earth. \nMount Holyoke is the home, to borrow Wendy Wasserstein’s phrase, of “uncommon women.” But we know that there are uncommon women in all corners of the globe. \nIn recent years, I have met in Sarajevo with women weighted down by personal grief reaching out across ethnic lines to rebuild their shattered society. In Burundi, I have seen women taking the lead   in efforts to avoid the fate of neighboring Rwanda, where violence left three-quarters of the population female, and one-half of the women widows. \nIn Guatemala, I have talked to women striving to ensure that their new peace endures and is accompanied by justice and an end to discrimination and abuse. \nAnd in Burma, I have met with a remarkable woman named Aung San Suu Kyi, who risks her life every day to keep alive the hope for democracy in her country. \nThese women have in common a determination to chart their own path, and by so doing, to alter for the better the course of their country or community. Each has suffered blows, but each has proceeded with courage. Each has persevered. \nAs you go along your own road in life, you will, if you aim high enough, also meet resistance, for as Robert Kennedy once said, “if there’s nobody in your way, it’s because you’re not going anywhere.” But no matter how tough the opposition may seem, have courage still —and persevere. \nThere is no doubt, if you aim high enough, that you will be confronted by those who say that your efforts to change the world or improve the lot of those around you do not mean much in the grand scheme of things. But no matter how impotent you may sometimes feel, have courage still —and persevere. \nIt is certain, if you aim high enough, that you will find your strongest beliefs ridiculed and challenged; principles that you cherish may be derisively dismissed by those claiming to be more practical or realistic than you. But no matter how weary you may become in persuading others to see the value in what you value, have courage still —and persevere. \nInevitably, if you aim high enough, you will be buffeted by demands of family, friends and employment that will conspire to distract you from your course. But no matter how difficult it may be to meet the commitments you have made, have courage still —and persevere. \nIt has been said that all work that is worth anything is done in faith. \nThis morning, in these beautiful surroundings, at this celebration of warm memory and high expectation, I summon you in the name of this historic college and of all who have passed through its halls, to embrace the faith that your courage and your perseverance will make a difference; and that every life enriched by your giving, every friend touched by your affection, every soul inspired by your passion and every barrier to justice brought down by your determination, will ennoble your own life, inspire others, serve your country, and explode outward the boundaries of what is achievable on this earth.",
@@ -83,20 +73,10 @@
                     "name": 0,
                     "range": [2512, 2560],
                     "explanation": ""
-                },
-                {
-                    "name": 0,
-                    "range": [10000, 10000],
-                    "explanation": ""
-                },
-                {
-                    "name": 0,
-                    "range": [10000, 10000],
-                    "explanation": ""
-                    
                 }
             ]
-        },{
+        },
+        {
             "name": "Mississippi river",
             "author": "John M. Barry",
             "text": "The river’s characteristics represent an extraordinarily dynamic combination of turbulent effects, and river hydraulics quickly go beyond the merely complex. Indeed, studies of flowing water in the 1970s helped launch the new science of chaos, and James Gleick in his book on the subject quotes physicist Werner Heisenberg, who stated that on his deathbed he would like to ask God two questions: why relativity? and, why turbulence? Heisenberg suggested, “I really think God may have an answer to the first question.” \nAnything from a temperature change to the wind to the roughness of the bottom radically alters a river’s internal dynamics. Surface velocities, bottom velocities, midstream and mid-depth velocities—all are affected by friction or the lack of friction with the air, the riverbank, the riverbed. But the complexity of the Mississippi exceeds that of nearly all other rivers. Not only is it acted upon; it acts. It generates its own internal forces through its size, its sediment load, its depth, variations in its bottom, its ability to cave in the riverbank and slide sideways for miles, and even tidal influences, which affect it as far north as Baton Rouge. Engineering theories and techniques that apply to other rivers, even such major rivers as the Po, the Rhine, the Missouri, and even the upper Mississippi, simply do not work on the lower Mississippi, which normally runs far deeper and carries far more water. (In 1993, for example, the floodwaters that overflowed, with devastating result, the Missouri and upper Mississippi put no strain on the levees along the lower Mississippi.) \nThe Mississippi never lies at rest. It roils. It follows no set course. Its waters and currents are not uniform. Rather, it moves south in layers and whorls, like an uncoiling rope made up of a multitude of discrete fibers, each one following an independent and unpredictable path, each one separately and together capable of snapping like a whip. It never has one current, one velocity. Even when the river is not in flood, one can sometimes see the surface in one spot one to two feet higher than the surface close by, while the water swirls about, as if trying to devour itself. Eddies of gigantic dimensions can develop, sometimes accompanied by great spiraling holes in the water. Humphreys observed an eddy “running upstream at seven miles an hour and extending half across the river, whirling and foaming like a whirlpool.” \nThe river’s sinuosity itself generates enormous force. The Mississippi snakes seaward in a continual series of S curves that sometimes approach 180 degrees. The collision of river and earth at these bends creates tremendous turbulence: currents can drive straight down to the bottom of the river, sucking at whatever lies on the surface, scouring out holes often several hundred feet deep. Thus the Mississippi is a series of deep pools and shallow “crossings,” and the movement of water from depth to shallows adds still further force and complexity.",
@@ -104,46 +84,33 @@
                 {
                     "name": 8,
                     "range": [455, 517],
-                    "explanation": ""
+                    "explanation": "This might be considered as irony, as one might expect God to have an answer to every question, so when that is not the case, it might come by as ironic."
                 },
                 {
                     "name": 6,
                     "range": [891, 1176],
-                    "explanation": ""
+                    "explanation": "Here, the fluent transition happens from informing about the fact that the water acts, to describing the details of the act. That might be considered as flow"
                 }, 
                 {
                     "name": 10,
                     "range": [1267, 1330],
-                    "explanation": ""
+                    "explanation": "Here, the author lists the rivers, which is an example of enumeration"
                 },
                 {
                     "name": 11,
                     "range": [1731, 1833],
-                    "explanation": ""
+                    "explanation": "Here, the author uses the word \"like\" to compare the river to a rope"
                 },
                 {
                     "name": 13,
-                    "range": [2141, 2190],
-                    "explanation": ""
+                    "range": [1998, 2190],
+                    "explanation": "This is imagery, as it makes the reader imagine how the water flows and what the river looks like"
                 },
                 {
                     "name": 0,
                     "range": [2512, 2560],
-                    "explanation": ""
-                },
-                {
-                    "name": 0,
-                    "range": [10000, 10000],
-                    "explanation": ""
-                },
-                {
-                    "name": 0,
-                    "range": [10000, 10000],
-                    "explanation": ""
-                    
+                    "explanation": "Here, the words starting with the letter 's' are continously used, which is a definition of alliteration"
                 }
-                    
-                    
             ]
         }
     ],
@@ -162,7 +129,7 @@
         },
         {
             "name": "Assonance",
-            "description": "In rhetoric, an anaphora is a rhetorical device that consists of repeating a sequence of words at the beginnings\nof neighbouring clauses, thereby lending them emphasis.\nExample: “let freedom ring from the prodigious hilltops of New Hampshire.\nLet freedom ring from the mighty mountains of New York.\nLet freedom ring from the heightening Alleghenies of Pennsylvania.\nLet freedom ring from the snow-capped Rockies of Colorado.”\n"
+            "description": "The repetition of internal vowel sounds in closely following words.\n-The effect of successful assonance is beauty of sound and emphasis\nExample: A deep, green stream"
         },
         {
             "name": "Connotation",
