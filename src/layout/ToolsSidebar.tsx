@@ -1,4 +1,5 @@
 import { StyleSheet, View } from 'react-native';
+import { useMediaQuery } from 'react-responsive';
 import { useRecoilState } from 'recoil';
 import { SidebarButton } from '../components/SidebarButton';
 import { Toolbox } from '../components/Toolbox';
@@ -8,9 +9,12 @@ export const ToolsSidebar = ({ tools, size, id, info, textSetter }: { tools: Arr
     const [results, setResults] = useRecoilState(resultsState);
     const [pairing, setPairing] = useRecoilState(pairingState);
     const [settings, setSettings] = useRecoilState(settingState);
+    const isTabletOrMobileDevice = useMediaQuery({    
+        maxDeviceWidth: 1224,
+      });
     
     return (
-        <View style={styles.container}>
+        <View style={[styles.container, isTabletOrMobileDevice ? styles.column : styles.row]}>
             <Toolbox tools={tools} />
             {results === -1 ? <SidebarButton text={settings.checkAnswersButton} onPress={() => {
                 let results = 0;
@@ -26,12 +30,17 @@ export const ToolsSidebar = ({ tools, size, id, info, textSetter }: { tools: Arr
 
 const styles = StyleSheet.create({
     container: {
-        minWidth: 230,
         flexWrap: 'wrap',
         display: 'flex',
         backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'flex-start',
         marginHorizontal: 20,
+    },
+    row: {
+      width: '20%',
+    },
+    column: {
+      width: '90%',
     }
 });

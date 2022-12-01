@@ -30,7 +30,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'flex-start',
         paddingBottom: 20,
-        alignSelf: `stretch`
     },
     text: {
         fontWeight: 'bold',
