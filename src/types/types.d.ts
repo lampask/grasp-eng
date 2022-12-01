@@ -12,8 +12,8 @@ type Result = {
 }
 
 type Settings = {
-    rhetoricalHeadline: string;
-    checkAnswerButton: string;
+    rhetoricHeadline: string;
+    checkAnswersButton: string;
     nextButton: string;
     correctColor: string;
     incorrectColor: string;

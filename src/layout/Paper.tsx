@@ -1,10 +1,14 @@
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import { useMediaQuery } from 'react-responsive';
 import { Highlight } from '../components/Highlight';
 
 export const Paper = ({text, devices} : {text: string, devices: Array<Device>}) => {
   var count = 0;
+  const isTabletOrMobileDevice = useMediaQuery({    
+    maxDeviceWidth: 1224,
+  });
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, isTabletOrMobileDevice ? styles.column : styles.row]}>
       <ScrollView nestedScrollEnabled>
         <View style={styles.paper}>
         {text.split('\n').map((paraghraph, index) => {
@@ -32,20 +36,30 @@ export const Paper = ({text, devices} : {text: string, devices: Array<Device>}) 
 
 const styles = StyleSheet.create({
     container: {
-        width: '50%',
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
-        border: '1px solid black',
+      backgroundColor: '#fff',
+      alignItems: 'center',
+      justifyContent: 'center',
+      border: '1px solid black',
     },
     paper: {
-        marginVertical: 45,
-        marginHorizontal: 75
+      flex: 1,
+      marginVertical: 45,
+      marginHorizontal: 75,
+      display: 'flex',
+      flexDirection:'column',
+      flexWrap: 'wrap',
     },
     text: {
-        textAlign: 'justify',
-        fontSize: 22,
-        fontFamily: "Times New Roman",
-        paddingVertical: 10,
+      textAlign: 'left',
+      fontSize: 22,
+      fontFamily: "Times New Roman",
+      paddingVertical: 10,
     },
+    row: {
+      width: '50%',
+    },
+    column: {
+      width: '90%',
+      marginBottom: 50,
+    }
 });

@@ -17,3 +17,8 @@ export const pairingState = atom({
         deviceId: number;
     }>,
 });
+
+export const settingState = atom({
+    key: "settings",
+    default: {} as Settings
+});

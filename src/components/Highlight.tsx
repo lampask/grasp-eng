@@ -8,13 +8,13 @@ export const Highlight = ({ id, count, device, paraghraph, size }: { id: number,
     const [selected, setSelected] = useRecoilState(selectedState);
     
     return (
-        <Text>{paraghraph.substring(0, device.range[0]-count)}<Pressable onPress={()=>{
+        <Text>{paraghraph.substring(0, device.range[0]-count)}<Text onPress={()=>{
             let newSelected = Array(size).fill(false, 0, size);
             newSelected[id] = !selected[id];
             setSelected(newSelected);
-        }} onHoverIn={()=>setIsHovered(true)} onHoverOut={()=>setIsHovered(false)}>
+        }} >
             <Text style={selected[id] ? styles.deviceSelected : (isHovered ? styles.deviceHovered : styles.device)}>{paraghraph.substring(device.range[0]-count, device.range[1]-count)}</Text>
-        </Pressable>{paraghraph.substring(device.range[1]-count, count+paraghraph.length)}</Text>
+        </Text>{paraghraph.substring(device.range[1]-count, count+paraghraph.length)}</Text>
     );
 };
 
@@ -31,5 +31,12 @@ const styles = StyleSheet.create({
         color: '#5bc8af',
         backgroundColor: '#d9d9d9dd',
         alignSelf: 'flex-start',
+    },
+    deviceSelectedAssigned: {
+        borderWidth: 1,
+        borderColor: 'black',
+        borderRadius: 12, 
+        padding: 1, 
+        color: '#577FFF',
     }
 });

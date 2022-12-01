@@ -12,6 +12,7 @@
     "predeploy": "expo export:web"
   },
   "dependencies": {
+    "@expo/match-media": "^0.4.0",
     "@expo/vector-icons": "^13.0.0",
     "@expo/webpack-config": "^0.17.2",
     "expo": "~47.0.8",
@@ -22,6 +23,7 @@
     "react-native": "0.70.5",
     "react-native-markdown-display": "^7.0.0-alpha.2",
     "react-native-web": "~0.18.9",
+    "react-responsive": "^9.0.2",
     "recoil": "^0.7.6"
   },
   "devDependencies": {

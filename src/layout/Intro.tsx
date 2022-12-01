@@ -1,15 +1,15 @@
 import { BlurView } from 'expo-blur';
 import { StyleSheet, View, Text, Pressable } from 'react-native';
-import ExtendedMarkdown, { Markdown } from 'react-native-markdown-display';
+import Markdown from 'react-native-markdown-display';
 
 export const Intro = ({ data, introduced }: { data: Intro, introduced: React.Dispatch<React.SetStateAction<boolean>> }) => {
     return (
         <BlurView style={styles.container}>
             <View style={styles.box}>
                 <Text selectable={false} style={styles.text}>{data.title}</Text>
-                <ExtendedMarkdown>
+                <Markdown>
                     {data !== undefined ? data.content : ""}
-                </ExtendedMarkdown>
+                </Markdown>
                 <Pressable onPress={() => { introduced(true) }}>
                     <Text>{data.buttonText}</Text>
                 </Pressable>
