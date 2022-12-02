@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
         width: '50%',
         position : 'absolute',
         left: '25vw',
-        top: '50vh',
+        top: '25vh',
         display: 'flex',
         backgroundColor: '#fff',
         border: '1px solid #000',
@@ -45,6 +45,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'flex-start',
         marginVertical: 10,
+        padding: 20,
     },
     button: {
         backgroundColor: '#5bc8af',
