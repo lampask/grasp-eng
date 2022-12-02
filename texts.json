@@ -61,22 +61,22 @@
                 },
                 {
                     "name": 12,
-                    "range": [370, 400],
+                    "range": [370, 402],
                     "explanation": "Through the use of metaphor, the author expresses that something is no longer existent"
                 }, 
                 {
-                    "name": 14,
-                    "range": [401, 410],
-                    "explanation": "The author repeats the words \"We could\" across consecutive paragraphs."
-                },
-                {
                     "name": 4,
-                    "range": [812, 833],
+                    "range": [812, 837],
                     "explanation": "The adjective \"child-maiming\" adds a negative connotation, as the issue is not actually focused on children, but the word is used to express the danger connected to landmines"
                 },
                 {
+                    "name": 14,
+                    "range": [953, 961],
+                    "explanation": "The author repeats the words \"We could\" across consecutive paragraphs."
+                },
+                {
                     "name": 1,
-                    "range": [2358, 2403],
+                    "range": [2364, 2411],
                     "explanation": "Here, the author alludes to women around the globe taking the lead, at a specific geographic area"
                 },
                 {
@@ -90,7 +90,7 @@
                     "explanation": ""
                 },
                 {
-                    "name": 0,
+                    "name": 2,
                     "range": [10000, 10001],
                     "explanation": ""
                 }
@@ -99,7 +99,7 @@
         {
             "name": "Rising Tide (excerpt)",
             "author": "John M. Barry",
-            "text": "The river’s characteristics represent an extraordinarily dynamic combination of turbulent effects, and river hydraulics quickly go beyond the merely complex. Indeed, studies of flowing water in the 1970s helped launch the new science of chaos, and James Gleick in his book on the subject quotes physicist Werner Heisenberg, who stated that on his deathbed he would like to ask God two questions: why relativity? and, why turbulence? Heisenberg suggested, “I really think God may have an answer to the first question.” \nAnything from a temperature change to the wind to the roughness of the bottom radically alters a river’s internal dynamics. Surface velocities, bottom velocities, midstream and mid-depth velocities—all are affected by friction or the lack of friction with the air, the riverbank, the riverbed. But the complexity of the Mississippi exceeds that of nearly all other rivers. Not only is it acted upon; it acts. It generates its own internal forces through its size, its sediment load, its depth, variations in its bottom, its ability to cave in the riverbank and slide sideways for miles, and even tidal influences, which affect it as far north as Baton Rouge. Engineering theories and techniques that apply to other rivers, even such major rivers as the Po, the Rhine, the Missouri, and even the upper Mississippi, simply do not work on the lower Mississippi, which normally runs far deeper and carries far more water. (In 1993, for example, the floodwaters that overflowed, with devastating result, the Missouri and upper Mississippi put no strain on the levees along the lower Mississippi.) \nThe Mississippi never lies at rest. It roils. It follows no set course. Its waters and currents are not uniform. Rather, it moves south in layers and whorls, like an uncoiling rope made up of a multitude of discrete fibers, each one following an independent and unpredictable path, each one separately and together capable of snapping like a whip. It never has one current, one velocity. Even when the river is not in flood, one can sometimes see the surface in one spot one to two feet higher than the surface close by, while the water swirls about, as if trying to devour itself. Eddies of gigantic dimensions can develop, sometimes accompanied by great spiraling holes in the water. Humphreys observed an eddy “running upstream at seven miles an hour and extending half across the river, whirling and foaming like a whirlpool.” \nThe river’s sinuosity itself generates enormous force. The Mississippi snakes seaward in a continual series of S curves that sometimes approach 180 degrees. The collision of river and earth at these bends creates tremendous turbulence: currents can drive straight down to the bottom of the river, sucking at whatever lies on the surface, scouring out holes often several hundred feet deep. Thus the Mississippi is a series of deep pools and shallow “crossings,” and the movement of water from depth to shallows adds still further force and complexity.",
+            "text": "The river’s characteristics represent an extraordinarily dynamic combination of turbulent effects, and river hydraulics quickly go beyond the merely complex. Indeed, studies of flowing water in the 1970s helped launch the new science of chaos, and James Gleick in his book on the subject quotes physicist Werner Heisenberg, who stated that on his deathbed he would like to ask God two questions: why relativity? and, why turbulence? Heisenberg suggested, “I really think God may have an answer to the first question.” \nAnything from a temperature change to the wind to the roughness of the bottom radically alters a river’s internal dynamics. Surface velocities, bottom velocities, midstream and mid-depth velocities—all are affected by friction or the lack of friction with the air, the riverbank, the riverbed. But the complexity of the Mississippi exceeds that of nearly all other rivers. Not only is it acted upon; it acts. It generates its own internal forces through its size, its sediment load, its depth, variations in its bottom, its ability to cave in the riverbank and slide sideways for miles, and even tidal influences, which affect it as far north as Baton Rouge. \nEngineering theories and techniques that apply to other rivers, even such major rivers as the Po, the Rhine, the Missouri, and even the upper Mississippi, simply do not work on the lower Mississippi, which normally runs far deeper and carries far more water. (In 1993, for example, the floodwaters that overflowed, with devastating result, the Missouri and upper Mississippi put no strain on the levees along the lower Mississippi.) \nThe Mississippi never lies at rest. It roils. It follows no set course. Its waters and currents are not uniform. Rather, it moves south in layers and whorls, like an uncoiling rope made up of a multitude of discrete fibers, each one following an independent and unpredictable path, each one separately and together capable of snapping like a whip. It never has one current, one velocity. Even when the river is not in flood, one can sometimes see the surface in one spot one to two feet higher than the surface close by, while the water swirls about, as if trying to devour itself. Eddies of gigantic dimensions can develop, sometimes accompanied by great spiraling holes in the water. Humphreys observed an eddy “running upstream at seven miles an hour and extending half across the river, whirling and foaming like a whirlpool.” \nThe river’s sinuosity itself generates enormous force. The Mississippi snakes seaward in a continual series of S curves that sometimes approach 180 degrees. The collision of river and earth at these bends creates tremendous turbulence: currents can drive straight down to the bottom of the river, sucking at whatever lies on the surface, scouring out holes often several hundred feet deep. Thus the Mississippi is a series of deep pools and shallow “crossings,” and the movement of water from depth to shallows adds still further force and complexity.",
             "devices": [
                 {
                     "name": 8,
@@ -147,11 +147,11 @@
     "guides": [
         {
             "name": "Alliteration",
-            "description": "The repetition in successive words of the same initial consonant sound or of any vowel sound\n-creates a strong, emotional response\n-the effect of successful alliteration is the beauty of sound and emphasis\nExample: The majestic, the magnificent Mississippi"
+            "description": "The repetition in successive words of the same initial consonant sound or of any vowel sound\n- creates a strong, emotional response\n- the effect of successful alliteration is the beauty of sound and emphasis\nExample: The majestic, the magnificent Mississippi"
         }, 
         {
             "name": "Allusion",
-            "description": "A reference to a generally familiar person, place or thing, whether real or legendary\n-drawn from history, geography, the Bible, mythology, and literature\n-creates familiarity for the audience; the audience connects to something larger than the present\nExample: Chocolate cake is my Achilles heel."
+            "description": "A reference to a generally familiar person, place or thing, whether real or legendary\n- drawn from history, geography, the Bible, mythology, and literature\n- creates familiarity for the audience; the audience connects to something larger than the present\nExample: Chocolate cake is my Achilles heel."
         },
         {
             "name": "Anaphora",
@@ -159,7 +159,7 @@
         },
         {
             "name": "Assonance",
-            "description": "The repetition of internal vowel sounds in closely following words.\n-The effect of successful assonance is beauty of sound and emphasis\nExample: A deep, green stream"
+            "description": "The repetition of internal vowel sounds in closely following words.\n- The effect of successful assonance is beauty of sound and emphasis\nExample: A deep, green stream"
         },
         {
             "name": "Connotation",
@@ -167,7 +167,7 @@
         },
         {
             "name": "Euphemism",
-            "description": "Replacing a harsh word with a more pleasant one\n-Disguises truth, often used by politicians and in censorship endeavours\n-Used to downplay a potentially bleak situation\nExample: Kick the bucket.\nExample: He was vertically challenged."
+            "description": "Replacing a harsh word with a more pleasant one\n- Disguises truth, often used by politicians and in censorship endeavours\n- Used to downplay a potentially bleak situation\nExample: Kick the bucket.\nExample: He was vertically challenged."
         },
         {
             "name": "Flow",
@@ -208,29 +208,29 @@
     ],
     "intro": {
         "title": "Welcome dear LA student",
-        "content": "## What is this? \n ## How it works?",
+        "content": "Here, you can practice and improve your knowledge of rhetorical devices, by identifying them in a text.\nYou will be shown a text, where every highlighted part is a rhetorical device. Your role will be to click on it and select the device from the list on the right. Each device is only used once, and two of them will always remain unused.\nAfter you are done, hit \"Check answers\" button to see your score and explanations. After clicking \"Next text\", you can practice this on another text.\nFor improved experience, it is encouraged that you use your laptop/tablet.",
         "buttonText": "PROCEED"
     },
     "results": [
         {
             "breakpoint": 0,
-            "message": "You are a beginner"
+            "message": "No worries, you can improve. Practice makes perfect."
         },
         {
             "breakpoint": 25,
-            "message": "Bruh Bruh Bruh"
+            "message": "You still have a long way to go, but you got some of the answers right."
         },
         {
             "breakpoint": 50,
-            "message": "Bruh bruh"
+            "message": "Not bad. You are able to identify some of the rhetorical tools, but there is still space for improvement."
         },
         {
             "breakpoint": 75,
-            "message": "Bruh"
+            "message": "Well done, you can identify rhetorical devices correctly most of the time!"
         },
         {
             "breakpoint": 100,
-            "message": "Amazing"
+            "message": "Amazing performance! You are great at this!"
         }
     ],
     "settings": {
