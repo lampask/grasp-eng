@@ -71,7 +71,7 @@
                 },
                 {
                     "name": 14,
-                    "range": [953, 961],
+                    "range": [951, 959],
                     "explanation": "The author repeats the words \"We could\" across consecutive paragraphs."
                 },
                 {
@@ -81,7 +81,7 @@
                 },
                 {
                     "name": 7,
-                    "range": [3304, 3324],
+                    "range": [3304, 3387],
                     "explanation": "This hortative sentence is a call to action for the audience"
                 },
                 {
@@ -208,7 +208,7 @@
     ],
     "intro": {
         "title": "Welcome dear LA student",
-        "content": "Here, you can practice and improve your knowledge of rhetorical devices, by identifying them in a text.\nYou will be shown a text, where every highlighted part is a rhetorical device. Your role will be to click on it and select the device from the list on the right. Each device is only used once, and two of them will always remain unused.\nAfter you are done, hit \"Check answers\" button to see your score and explanations. After clicking \"Next text\", you can practice this on another text.\nFor improved experience, it is encouraged that you use your laptop/tablet.",
+        "content": "Here, you can practice and improve your knowledge of rhetorical devices, by identifying them in a text.\nYou will be shown a text, where every highlighted part is a rhetorical device. Your role will be to click on it and select the device from the list on the right. Each device is only used once, and two of them will always remain unused.\nAfter you are done, hit \"Check answers\" button to see your score. If you then click on the highlighted part, it will show you an explanation. After clicking \"Next text\", you can practice this on another text.\nFor improved experience, it is encouraged that you use your laptop/tablet.",
         "buttonText": "PROCEED"
     },
     "results": [
