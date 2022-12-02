@@ -40,7 +40,7 @@ export const Main = ({ data, textState }: { data: Data | undefined, textState: [
     <> 
         <Title title={data?.texts[text].name!} name={data?.texts[text].author!} />
         <View style={[styles.container, isTabletOrMobileDevice ? styles.column : styles.row]}>
-            <ControlsSidebar res={data?.results!} />
+            <ControlsSidebar devices={data?.texts[text].devices!} res={data?.results!} />
             <Paper text={data?.texts[text].text!} devices={data?.texts[text].devices!}/>
             <ToolsSidebar tools={devices} id={text} size={data?.texts.length!} info={data?.texts[text]!} textSetter={setText}/>
         </View>

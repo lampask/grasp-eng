@@ -19,6 +19,7 @@ type Settings = {
     incorrectColor: string;
     primaryColor: string;
     secondaryColor: string;
+    explanation: string;
 }
 
 type Intro = {
@@ -42,5 +43,6 @@ type ChallengeText = {
 type Device = {
     name: number;
     range: Array<number>;
+    explanation: string;
 };
 

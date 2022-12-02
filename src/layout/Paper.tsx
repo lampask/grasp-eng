@@ -4,27 +4,25 @@ import { Highlight } from '../components/Highlight';
 
 export const Paper = ({text, devices} : {text: string, devices: Array<Device>}) => {
   var count = 0;
+  var id = 0;
   const isTabletOrMobileDevice = useMediaQuery({    
     maxDeviceWidth: 1224,
   });
+
+
   return (
     <View style={[styles.container, isTabletOrMobileDevice ? styles.column : styles.row]}>
       <ScrollView nestedScrollEnabled>
         <View style={styles.paper}>
         {text.split('\n').map((paraghraph, index) => {
           const size = paraghraph.length;
-          let flag = false;
+          const devicesParagraph = devices.filter((device) => size+count > device.range[0] && count <= device.range[0] && size+count >= device.range[1] && count < device.range[1]).sort();
           const elem = (
             <Text style={styles.text} key={index}>
-              {devices.map((device, index) => {
-                if (size+count > device.range[0] && count <= device.range[0] && size+count >= device.range[1] && count < device.range[1]) {
-                  flag = true;
-                  return <Highlight key={index} id={index} count={count} device={device} paraghraph={paraghraph} size={devices.length} />;
-                }
-              })}
-              {flag ? '' : paraghraph}
+              <Highlight key={index} id={id} count={count} devices={devicesParagraph} paraghraph={paraghraph} size={devices.length} />
             </Text>
-          )
+          );
+          id += devicesParagraph.length;
           count += size;
           return elem;
         })}
