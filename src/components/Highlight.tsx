@@ -4,7 +4,7 @@ import { useRecoilState } from 'recoil';
 import { pairingState, resultsState, selectedState } from '../lib/state';
 
 export const Highlight = ({ id, count, device, paraghraph, size }: { id: number, count: number, device: {name: number;range: Array<number>}, paraghraph: string, size: number}) => {
-    const [isHovered, setIsHovered] = useState(false);
+
     const [selected, setSelected] = useRecoilState(selectedState);
     const [pairing, setPairing] = useRecoilState(pairingState);
     const [results, setResults] = useRecoilState(resultsState);

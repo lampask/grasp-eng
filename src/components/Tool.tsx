@@ -6,7 +6,7 @@ import { useRecoilState } from "recoil";
 import { pairingState, selectedState } from "../lib/state";
 import { FontAwesome } from '@expo/vector-icons';
 
-export const Tool = ({ id, name, description, size }: { id: number, name: string, description: string, size: number }) => {
+export const Tool = ({ id, name, type, description }: { id: number, name: string, type: number, description: string, }) => {
     const [modalVisible, setModalVisible] = useState(false);
     const [pairing, setPairing] = useRecoilState(pairingState);
     const selectedText = useRecoilState(selectedState);
@@ -18,12 +18,14 @@ export const Tool = ({ id, name, description, size }: { id: number, name: string
                 <Pressable onPress={() => {
                     if (selectedText[0].includes(true)) {
                         const idx = pairing.findIndex((pair) => pair.textId === selectedTextId);        
-                            let newPairing = structuredClone(pairing);
-                            newPairing[idx].deviceId = pairing[idx].deviceId === id ? -1 : id;
-                            setPairing(newPairing);
+                        let newPairing = structuredClone(pairing);
+                        newPairing[idx].id = pairing[idx].id === id ? -1 : id;
+                        newPairing[idx].deviceId = newPairing[idx].id === -1 ? -1 : type;
+                        setPairing(newPairing);
+                        console.log(newPairing);
                     }
                 }}>
-                    <View style={styles.buttonSelect}>{selectedText[0].includes(true) && pairing[pairing.findIndex((pair) => pair.textId === selectedTextId)].deviceId === id ? <FontAwesome name="square" size={13} color="black" /> : <></>}</View>
+                    <View style={styles.buttonSelect}>{selectedText[0].includes(true) && pairing[pairing.findIndex((pair) => pair.textId === selectedTextId)].id === id ? <FontAwesome name="square" size={13} color="black" /> : <></>}</View>
                 </Pressable>
                 <Text selectable={false} style={styles.device}>{name}</Text>
             </View>

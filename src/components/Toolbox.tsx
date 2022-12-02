@@ -4,10 +4,7 @@ import { useRecoilState } from 'recoil';
 import { pairingState, settingState } from '../lib/state';
 import { Tool } from './Tool';
 
-export const Toolbox = ({ tools }: { tools: Array<{
-    name: string;
-    description: string;
-  }>}) => {
+export const Toolbox = ({ tools, guides }: { tools: Array<Device>, guides: Guide[]}) => {
     const isTabletOrMobileDevice = useMediaQuery({    
         maxDeviceWidth: 1224,
       })
@@ -19,7 +16,7 @@ export const Toolbox = ({ tools }: { tools: Array<{
         <View style={[styles.container, isTabletOrMobileDevice ? styles.column : styles.row]}>
             <Text style={styles.text}>{settings.rhetoricHeadline} ({pairCount}/6)</Text>
             {tools.map((tool, index) => (
-                <Tool key={index} id={index} name={tool.name} description={tool.description} size={tools.length} />
+                <Tool key={index} id={index} name={guides[tool.name].name} type={tool.name} description={guides[tool.name].description} />
             ))}
         </View>
     );

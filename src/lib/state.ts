@@ -15,6 +15,7 @@ export const pairingState = atom({
     default: [] as Array<{
         textId: number;
         deviceId: number;
+        id: number;
     }>,
 });
 

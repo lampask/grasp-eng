@@ -16,7 +16,7 @@ export const Main = ({ data, textState }: { data: Data | undefined, textState: [
   const [results, setResults] = useRecoilState(resultsState);
   const [settings, setSettings] = useRecoilState(settingState);
   const [text, setText] = textState;
-  const [devices, setDevices] = useState([] as Guide[]);
+  const [devices, setDevices] = useState([] as Device[]);
 
   
   useEffect(() => {
@@ -26,9 +26,9 @@ export const Main = ({ data, textState }: { data: Data | undefined, textState: [
   useEffect(() => {
     if (data !== undefined) {
         setResults(-1);
-        setDevices([...data?.texts[text].devices.map((device) => data?.guides[device.name])!].sort(() => Math.random() - 0.5));
+        setDevices([...data?.texts[text].devices!].sort(() => Math.random() - 0.5));
         setSelected(Array(6).fill(false, 0, data?.texts[text].devices.length));
-        setPairing(Array.from(Array(6), (_, index) => { return { textId: index, deviceId: -1 }}));
+        setPairing(Array.from(Array(6), (_, index) => { return { textId: index, deviceId: -1, id: -1 }}));
     }
   }, [text]);
   
@@ -42,7 +42,7 @@ export const Main = ({ data, textState }: { data: Data | undefined, textState: [
         <View style={[styles.container, isTabletOrMobileDevice ? styles.column : styles.row]}>
             <ControlsSidebar devices={data?.texts[text].devices!} res={data?.results!} />
             <Paper text={data?.texts[text].text!} devices={data?.texts[text].devices!}/>
-            <ToolsSidebar tools={devices} id={text} size={data?.texts.length!} info={data?.texts[text]!} textSetter={setText}/>
+            <ToolsSidebar tools={devices} id={text} size={data?.texts.length!} info={data?.texts[text]!} guides={data?.guides!} textSetter={setText}/>
         </View>
         <StatusBar style="auto" />
     </>

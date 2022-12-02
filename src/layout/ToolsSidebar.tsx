@@ -5,7 +5,7 @@ import { SidebarButton } from '../components/SidebarButton';
 import { Toolbox } from '../components/Toolbox';
 import { pairingState, resultsState, settingState } from '../lib/state';
 
-export const ToolsSidebar = ({ tools, size, id, info, textSetter }: { tools: Array<Guide>, size: number, id: number, info: ChallengeText, textSetter: React.Dispatch<React.SetStateAction<number>>}) => {
+export const ToolsSidebar = ({ tools, size, id, info, guides, textSetter }: { tools: Array<Device>, size: number, id: number, info: ChallengeText, guides: Guide[], textSetter: React.Dispatch<React.SetStateAction<number>>}) => {
     const [results, setResults] = useRecoilState(resultsState);
     const [pairing, setPairing] = useRecoilState(pairingState);
     const [settings, setSettings] = useRecoilState(settingState);
@@ -15,12 +15,15 @@ export const ToolsSidebar = ({ tools, size, id, info, textSetter }: { tools: Arr
     
     return (
         <View style={[styles.container, isTabletOrMobileDevice ? styles.column : styles.row]}>
-            <Toolbox tools={tools} />
+            <Toolbox guides={guides} tools={tools} />
             {results === -1 ? <SidebarButton text={settings.checkAnswersButton} onPress={() => {
                 let results = 0;
                 for (let i = 0; i < pairing.length; i++) {
-                    if (pairing[i].deviceId === info.devices[i].name) results++;
+                    const idx = pairing.findIndex((pair) => pair.textId === i);    
+                    if (pairing[idx].deviceId === info.devices[i].name) results++;
                 }
+                console.log(pairing);
+                console.log(info.devices)
                 setResults(Math.trunc((results / pairing.length) * 100));
             }} /> : <></> }
             <SidebarButton text={settings.nextButton} onPress={() => { textSetter((id+1) % size) }} />
